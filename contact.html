@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBM-Go | Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.jpg" alt="BBM-GO" class="logo">
+      <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Key Services</a></li>
+        <li><a href="rovers-club.html">Rovers Club</a></li>
+        <li><a href="chatroom.html">Channel/Chatroom</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-btn">eHailing <img src="images/arrow-white.png" alt="BBM-GO"></button>
+   
+      <img src="images/menu.png" alt="BBM-GO" class="menu-items" onclick="toogleMenu()">
+    </nav>
+  </header>
+  <main>
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions? Get in touch with us!</p>
+      <p>Email: info@bbmgo.com</p>
+      <p>Phone: +27 123 456 789</p>
+      <p>Follow us: 
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">Twitter</a>
+      </p>
+  </section>
+
+  </main>
+  <footer>
+    <p>© 2024 BBM-Go. All Rights Reserved.</p>
+  </footer>
+  <!--Scripts section thabo-->
+  <script src="assets/js/script.js"></script>
+  <script>
+    let navbar = document.querySelector('nav');
+    let menu = document.getElementById("menu-links");
+
+    function toogleMenu(){
+      menu.classList.toggle('show-menu');
+    }
+    window.onscroll = function(){
+      if(window.screenY > 0){
+        navbar.style.background = '#eefff9';
+      }else{navbar.style.background = 'transparent'}
+    }
+  </script>
+</body>
+</html>

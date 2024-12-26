@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBM-Go | Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <img src="images/logo.jpg" alt="BBM-GO" class="logo">
+      <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Key Services</a></li>
+        <li><a href="rovers-club.html">Rovers Club</a></li>
+        <li><a href="chatroom.html">Channel/Chatroom</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-btn">eHailing <img src="images/arrow-white.png" alt="BBM-GO"></button>
+      <img src="images/menu.png" alt="BBM-GO" class="menu-items" onclick="toogleMenu()">
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="header">
+    <section class="hero">
+      <h1>Welcome to BBM-Go</h1>
+      <div class="sliding-words">
+        <p>Your Trusted Travel Partner</p>
+        <p>Affordable Travel Packages</p>
+        <p>Memorable Adventures Await</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About BBM-Go</h2>
+      <p>Founded in 2020, we craft affordable and premium travel packages tailored to your dreams. Explore the world in style with BBM-Go.</p>
+    </section>
+
+    <!-- Previous Trips Section -->
+    <section id="trips" class="trips">
+      <h2>Our Previous Trips</h2>
+      <div class="image-slider">
+        <div class="slides">
+          <img src="images/bbmGo/DSC_0792.JPG" alt="Trip 1">
+          <img src="images/bbmGo/DSC_0809.JPG" alt="Trip 2">
+          <img src="images/bbmGo/DSC_0838.JPG" alt="Trip 3">
+          <img src="images/bbmGo/DSC_0839.JPG" alt="Trip 4">
+          <img src="images/bbmGo/DSC_0841.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0846.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0847.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0851.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0852.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0853.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0856.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0857.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0858.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0859.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0861.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0864.JPG" alt="bbmGo">
+          <img src="images/bbmGo/DSC_0865.JPG" alt="bbmGo">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 BBM-Go. All Rights Reserved.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank" class="social-link">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.twitter.com" target="_blank" class="social-link">
+        <img src="images/square-x-twitter-brands-solid.svg" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="social-link">
+        <img src="images/insta.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" class="social-link">
+        <img src="images/linkedin-logo.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+  
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script>
+    let menu = document.getElementById("menu-links");
+
+    function toogleMenu(){
+      menu.classList.toggle('show-menu');
+    }
+
+    // Sliding Words Animation
+    let words = document.querySelectorAll('.sliding-words p');
+    let index = 0;
+    setInterval(() => {
+      words[index].style.display = 'none';
+      index = (index + 1) % words.length;
+      words[index].style.display = 'block';
+    }, 3000);
+
+    // Image Slider
+    const slides = document.querySelector('.slides');
+    let slideIndex = 0;
+    setInterval(() => {
+      slideIndex = (slideIndex + 1) % 17;
+      slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }, 4000);
+  </script>
+</body>
+</html>
+
+<!-- DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBM-Go | Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+ 
+
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.jpg" alt="BBM-GO" class="logo">
+      <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Key Services</a></li>
+        <li><a href="rovers-club.html">Rovers Club</a></li>
+        <li><a href="chatroom.html">Channel/Chatroom</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-btn">eHailing <img src="images/arrow-white.png" alt="BBM-GO"></button>
+   
+      <img src="images/menu.png" alt="BBM-GO" class="menu-items" onclick="toogleMenu()">
+    </nav>
+  </header>
+  
+  <main class="header">
+    <header>
+      <h1>Welcome to BBM-Go</h1>
+      <p class="header-text">Your Partner in Memorable Travel Experiences</p>
+  </header>
+    
+   !-- Hero Section --
+   <section id="home" class="hero">
+    <h1>Explore the World with BBM-Go</h1>
+    <p>Founded in 2020, we craft affordable and premium travel packages tailored to your dreams.</p>
+</section>
+
+
+
+
+
+  </main>
+  <footer>
+    <p>© 2024 BBM-Go. All Rights Reserved.</p>
+  </footer>
+  !--Scripts section thabo--
+  <script src="assets/js/script.js"></script>
+  <script>
+    let navbar = document.querySelector('nav');
+    let menu = document.getElementById("menu-links");
+
+    function toogleMenu(){
+      menu.classList.toggle('show-menu');
+    }
+    window.onscroll = function(){
+      if(window.screenY > 0){
+        navbar.style.background = '#eefff9';
+      }else{navbar.style.background = 'transparent'}
+    }
+  </script>
+</body>
+</html>-->

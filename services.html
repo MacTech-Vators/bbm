@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBM-Go | Key Services</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.jpg" alt="BBM-GO" class="logo">
+      <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Key Services</a></li>
+        <li><a href="rovers-club.html">Rovers Club</a></li>
+        <li><a href="chatroom.html">Channel/Chatroom</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-btn">eHailing <img src="images/arrow-white.png" alt="BBM-GO"></button>
+   
+      <img src="images/menu.png" alt="BBM-GO" class="menu-items" onclick="toogleMenu()">
+    </nav>
+  </header>
+  <main>
+    <section id="services">
+      <h1>Key Services</h1>
+      <ul>
+        <li>Trip planning and itineraries</li>
+        <li>Accommodation booking</li>
+        <li>Transport arrangements</li>
+        <li>Excursions and adventure activities</li>
+      </ul>
+    </section>
+    <section id="services">
+      <h2>Our Key Services</h2>
+      <div class="cards">
+          <div class="card">
+              <h3>Packaged Tours</h3>
+              <p>All-inclusive trips with expertly crafted itineraries to suit your needs.</p>
+          </div>
+          <div class="card">
+              <h3>Accommodation</h3>
+              <p>From budget-friendly options to luxury stays, we've got you covered.</p>
+          </div>
+          <div class="card">
+              <h3>Transport & Flights</h3>
+              <p>Seamless transport and flight bookings for stress-free travel.</p>
+          </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 BBM-Go. All Rights Reserved.</p>
+  </footer>
+  <!--Scripts section thabo-->
+  <script src="assets/js/script.js"></script>
+  <script>
+    let navbar = document.querySelector('nav');
+    let menu = document.getElementById("menu-links");
+
+    function toogleMenu(){
+      menu.classList.toggle('show-menu');
+    }
+    window.onscroll = function(){
+      if(window.screenY > 0){
+        navbar.style.background = '#eefff9';
+      }else{navbar.style.background = 'transparent'}
+    }
+  </script>
+</body>
+</html>

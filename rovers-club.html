@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBM-Go | Rovers Club</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.jpg" alt="BBM-GO" class="logo">
+      <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Key Services</a></li>
+        <li><a href="rovers-club.html">Rovers Club</a></li>
+        <li><a href="chatroom.html">Channel/Chatroom</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-btn">eHailing <img src="images/arrow-white.png" alt="BBM-GO"></button>
+   
+      <img src="images/menu.png" alt="BBM-GO" class="menu-items" onclick="toogleMenu()">
+    </nav>
+  </header>
+  <main>
+    <section id="rovers">
+      <h1>Rovers Club</h1>
+      <p>Join the Rovers Club to enjoy exclusive travel discounts, updates on new destinations, and networking with fellow adventurers.</p>
+      <button>Join Now</button>
+    </section>
+    <section id="rovers-club">
+      <h2>About Rovers Club</h2>
+      <p>Join our exclusive travel club and enjoy a world of benefits!</p>
+      <ul>
+          <li>Personalized travel benefits</li>
+          <li>Exclusive discounts</li>
+          <li>Member-only rewards</li>
+      </ul>
+  </section>
+  </main>
+  <footer>
+    <p>© 2024 BBM-Go. All Rights Reserved.</p>
+  </footer>
+  <!--Scripts section thabo-->
+  <script src="assets/js/script.js"></script>
+  <script>
+    let navbar = document.querySelector('nav');
+    let menu = document.getElementById("menu-links");
+
+    function toogleMenu(){
+      menu.classList.toggle('show-menu');
+    }
+    window.onscroll = function(){
+      if(window.screenY > 0){
+        navbar.style.background = '#eefff9';
+      }else{navbar.style.background = 'transparent'}
+    }
+  </script>
+</body>
+</html>
